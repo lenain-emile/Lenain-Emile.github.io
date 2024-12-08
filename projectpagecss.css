@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+@font-face {
+    font-family: 'policehome'; 
+    src: url('./RobotoMono-Regular.ttf') format('truetype'); 
+}
+
+
+body{
+    background-image: url(polygon-8038340_1920.png);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+
+}
+
+nav ul {
+    display: flex;
+    margin: 0px 30px;
+}
+
+nav ul li{
+    margin-left: 60px;
+}
+
+nav ul li a{
+    color: brown;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'policehome', 'sans-serif'
+}
+
+.projecttitle{
+    padding-top: 90px;
+    font-size: 40px;
+    margin-left: 250px;
+    color: rgba(255, 248, 248, 0.627);
+
+}
+
+.lienproject {
+    display: inline-block;
+    padding: 50px 60px;
+    font-size: 50px;
+    font-weight: sans;
+    background-color: #24292e;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.lienproject {
+    background-color: #000408;
+}

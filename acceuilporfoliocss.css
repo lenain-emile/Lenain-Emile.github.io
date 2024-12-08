@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+@font-face {
+    font-family: 'policehome'; 
+    src: url('./RobotoMono-Regular.ttf') format('truetype'); 
+}
+
+
+body{
+    background-image: url(polygon-8038340_1920.png);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+
+}
+
+nav ul {
+    display: flex;
+    margin: 0px 30px;
+}
+
+nav ul li{
+    margin-left: 60px;
+}
+
+nav ul li a{
+    color: brown;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'policehome', 'sans-serif'
+}
+
+.hometitle{
+    padding-top: 95px;
+    font-size: 37px;
+    margin-left: 250px;
+    max-width: 800px;
+    color: rgba(255, 248, 248, 0.627);
+
+}
+
+.hometitle > p {
+    font-size: 23px;
+    max-width: 700px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255)
+}
+
+.liencontact {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.liencontact img{
+    width: 70px;
+    height: 70px;
+    border-radius: 40px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-family: 'policehome'
+}
+
+h2{
+    font-family: 'policehome';
+}

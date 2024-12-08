@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+@font-face {
+    font-family: 'policehome'; 
+    src: url('./RobotoMono-Regular.ttf') format('truetype'); 
+}
+
+
+body{
+    background-image: url(polygon-8038340_1920.png);
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 60px;
+
+}
+
+nav ul {
+    display: flex;
+    margin: 0px 30px;
+}
+
+nav ul li{
+    margin-left: 60px;
+}
+
+.titlecontact {
+
+    padding-top: 95px;
+    font-size: 37px;
+    margin-left: 250px;
+    max-width: 800px;
+    color: rgba(255, 248, 248, 0.627);
+}
+
+nav ul li a{
+    color: brown;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'policehome', 'sans-serif'
+}
+
+img {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-family: 'policehome', sans-serif;
+}
+
+.liencontact{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+.logo {
+    margin-top: 100px; 
+    }
