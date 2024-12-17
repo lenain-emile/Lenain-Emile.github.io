@@ -45,22 +45,37 @@ nav ul li a{
     font-size: 40px;
     margin-left: 250px;
     color: rgba(255, 248, 248, 0.627);
+    padding-bottom: 100px;
 
 }
 
-.lienproject {
-    display: inline-block;
-    padding: 50px 60px;
-    font-size: 50px;
-    font-weight: sans;
-    background-color: #24292e;
-    border: none;
-    border-radius: 30px;
+.projects {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 30px; 
+    padding: 50px 0; 
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px; /* Largeur du bloc */
+    height: 120px; 
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #030405; /* Couleur de fond */
+    border-radius: 15px; /* Coins arrondis */
+    transition: background-color 0.3s ease;
+}
+
+.lien a {
     text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.4s ease;
+    color: white;
+    font-family: './RobotoMono-Regular.ttf';
 }
 
-.lienproject {
-    background-color: #000408;
+.lien:hover {
+    background-color: brown; 
 }

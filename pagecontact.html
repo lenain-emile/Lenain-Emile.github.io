@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>portfolio Emile-Lenain</title>
-        <link rel="stylesheet" href="pagecontactcss.css"> 
-    </head>
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio Emile-Lenain</title>
+    <link rel="stylesheet" href="pagecontactcss.css"> 
+</head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pageabout.html">About Me</a></li>
-                    <li><a href="projectpages.html">My project</a></li>
-                    <li><a href="pagecontact.html">Contact</a></li>
-                </ul>
-            </nav>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pageabout.html">About Me</a></li>
+        <li><a href="projectpages.html">My project</a></li>
+        <li><a href="pagecontact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </header>
+  <section class="titlecontact">
+    <h1>Contact</h1>
+  </section>
+    
+  <section>
+    <div class="liencontact">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="logoinsta.jpg" alt="logo instagram">
+      </a>
 
-        <section class="titlecontact">
-            <h1>Contact</h1>
-        </section>
-        
-        <section>
-            <div class="liencontact">
-                <a href="https://www.instagram.com/"><img src="logoinsta.jpg" alt="logo instagram"></a>
-                <a href="https://github.com/lenain-emile"><img src="logoguithub.png" alt="logo github"></a>
-                <a href=""><img src="logolinkedln.png" alt="logo linkedin" class="logo"></a>
-                <img src="https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_48dp.png" 
-                    alt="Icône Gmail" 
-                    id="gmailImage" 
-                    class="logo">
-            </div>
-            <script>
-                const emailAddress = "lenain.emile@gmail.com";
-        
-                // Ajout d'un événement au clic sur l'image
-                document.getElementById("gmailImage").addEventListener("click", function() {
-                    // Création d'un lien mailto et ouverture dans un nouvel onglet
-                    const mailtoLink = `mailto:${emailAddress}`;
-                    window.open(mailtoLink, "_blank");
-                });
-            </script>
-        </section>
-        
-        
-    </body>
+      <a href="https://github.com/lenain-emile" target="_blank">
+        <img src="logoguithub.png" alt="logo github">
+      </a>
+
+      <a href="" target="_blank">
+        <img src="logolinkedln.png" alt="logo linkedin" class="logo">
+      </a>
+
+      <a href="mailto:lenain.emile@gmail.com" target="_blank">
+        <img 
+          src="https://www.gstatic.com/images/branding/product/2x/gmail_2020q4_48dp.png" 
+          alt="Icône Gmail" 
+          id="gmailImage" 
+          class="logo"
+        />
+      </a>
+    </div>
+  </section>
+</body>
