@@ -13,7 +13,7 @@
 
 
 body{
-    background-image: url(polygon-8038340_1920.png);
+    background-color: black;
     background-size: cover;
 }
 
@@ -61,18 +61,18 @@ nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px; /* Largeur du bloc */
+    width: 320px; 
     height: 120px; 
     font-size: 30px;
     font-weight: bold;
-    background-color: #030405; /* Couleur de fond */
-    border-radius: 15px; /* Coins arrondis */
+    background-color: #ffffff; 
+    border-radius: 15px; 
     transition: background-color 0.3s ease;
 }
 
 .lien a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: './RobotoMono-Regular.ttf';
 }
 
