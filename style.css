@@ -1,0 +1,367 @@
+/* Styles généraux pour un design moderne inspiré du CV et de l'exemple */
+:root {
+  --primary-bg: #1a374d; /* Un bleu foncé inspiré du CV */
+  --secondary-bg: #ffffff; /* Blanc pour le contenu principal */
+  --primary-text: #ffffff;
+  --secondary-text: #333333; /* Gris foncé pour le texte */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.7;
+  font-size: 1.05em;
+  padding-top: 76px;
+}
+
+.container {
+    max-width: 1000px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Assurer un bon espacement vertical (utilisé par Bootstrap, conservé pour compatibilité) */
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-bg);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+header {
+  height: 100vh; /* Hauteur fixe de la fenêtre */
+  box-sizing: border-box; /* Inclure le padding dans la hauteur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  margin: 0;
+  padding: 4rem 0; /* Padding cohérent avec les sections pour la hauteur */
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #ccc;
+  padding: 4rem 0;
+}
+
+/* Ajustements spécifiques aux sections (pas de padding ici car géré par la règle 'section') */
+#about, #skills, #projects, #education, #contact {
+  /* Les paddings sont gérés par la règle 'section' générale */
+}
+
+#about,
+#projects,
+#education {
+  background-color: var(--secondary-bg);
+  color: var(--secondary-text);
+}
+
+#skills {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+#contact {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+footer {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 3px solid #ccc;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Amélioration de la section compétences */
+#skills .row > div {
+    margin-bottom: 30px;
+}
+
+#skills h3 {
+    color: var(--primary-text);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+#skills li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #ddd;
+}
+
+#skills li::before {
+  content: '\2022';
+  color: #00b0f0;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+}
+
+/* Styles pour les autres listes */
+#projects ul,
+#education ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#projects li,
+#education li {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+#projects li::before,
+#education li::before {
+  content: '\2022';
+  color: var(--primary-bg);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+}
+
+/* Amélioration des cartes */
+.card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--primary-bg);
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.card-body ul {
+  margin-top: 10px;
+}
+
+/* Style pour la section contact - amélioré */
+#contact h2 {
+    color: var(--primary-text);
+}
+
+#contact h3 {
+  color: var(--primary-text);
+  margin-bottom: 15px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    color: var(--primary-text);
+    margin-bottom: 8px;
+}
+
+#contact form .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: var(--primary-text);
+    margin-bottom: 15px;
+}
+
+#contact form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: none;
+}
+
+#contact form .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#contact form .btn-outline-light {
+    border-color: var(--primary-text);
+    color: var(--primary-text);
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact form .btn-outline-light:hover {
+    background-color: var(--primary-text);
+    color: var(--primary-bg);
+}
+
+#contact .col-md-6 h3 {
+  color: var(--primary-text);
+}
+
+#contact .col-md-6 p {
+  color: var(--primary-text);
+}
+
+#contact .col-md-6 a {
+  color: var(--primary-text);
+  text-decoration: underline;
+}
+
+#contact .col-md-6 a:hover {
+  color: #ddd;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-text {
+  padding: 0;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.hero-text h1.display-4 {
+  font-size: 8vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1 !important;
+  margin-top: 0;
+  margin-bottom: -100px;
+}
+
+.hero-text p.lead {
+  font-size: 3vw;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1 !important;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+/* Animation Hero */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+  background-color: rgba(26, 55, 77, 0.95);
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--primary-text) !important;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav-link {
+  color: var(--primary-text) !important;
+  font-weight: 300;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  margin: 0 10px;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.nav-link:hover {
+  color: #00b0f0 !important;
+}
+
+.navbar-toggler {
+  border-color: var(--primary-text);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

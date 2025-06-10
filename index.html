@@ -1,37 +1,208 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head> 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>portfolio Emile-Lenain</title>
-        <link rel="stylesheet" href="acceuilporfoliocss.css"> 
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pageabout.html">About Me</a></li>
-                    <li><a href="projectpages.html">My project</a></li>
-                    <li><a href="pagecontact.html">Contact</a></li>
-                </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Emile Lenain - Développeur Web Junior</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">EL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Formation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-        </header>
+  <!-- Hero -->
+  <header class="text-white text-center">
+    <div class="container hero-text">
+      <img src="assets/download.jpg" alt="Photo de profil" class="img-fluid rounded-circle profile-pic" />
+      <h1 class="display-4">Salut, moi c'est <strong>Emile Lenain</strong></h1>
+      <p class="lead">Développeur Web Junior</p>
+      <a href="#projects" class="btn btn-outline-light mt-3">Voir mes projets</a>
+    </div>
+  </header>
 
-        <main>
-            <section class="hometitle">
-                <h1>Lenain Emile</h1>
-                
-                <h2>Full-stack Web Developer</h2>
-                
-                <p>
-                    I'm a full-stack web developer with a passion for creating effective and secure digital experiences. With a solid foundation in web development, I'm constantly honing my skills to build the most seamless and intuitive web applications possible for users. .  
+  <!-- À propos -->
+  <section id="about" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">À propos</h2>
+      <p class="text-center">Jeune étudiant de 20 ans ayant passé son bac général en 2024 au lycée Thiers, je m'oriente actuellement dans le domaine du développement web. Fortement intéressé par ce domaine je souhaite développer mon expérience et mes compétences dans une entreprise avec laquelle je pourrai évoluer dans ma carrière et y apporter mes qualités.</p>
+    </div>
+  </section>
 
-                </p>
-            </section>
+  <!-- Compétences -->
+  <section id="skills" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Compétences</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Langages back-end</h3>
+          <ul>
+            <li>PHP / SQL</li>
+          </ul>
+          <h3>Langages front end</h3>
+          <ul>
+            <li>HTML / CSS</li>
+          </ul>
+          <h3>Outils</h3>
+          <ul>
+            <li>FIGMA / TRELLO / GUITHUB / GIT</li>
+          </ul>
+          <h3>Framework</h3>
+          <ul>
+            <li>Bootstrap, Tailwind, ReactJS, Angular, Jquery</li>
+          </ul>
+          <h3>Conteneurisation</h3>
+          <ul>
+            <li>docker</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Compétences à venir</h3>
+          <ul>
+            <li>Développement web avancé: Interfaces, bases de données NoSQL et gestion de projets (MongoDB, Express)</li>
+            <li>Frameworks Web: Découverte de Symfony, gestion des bases de données ORM et utilisation de Twig.</li>
+            <li>Expertise Backend / DevOps: Conception avancée d'API, intégration continue et déploiement automatisé (CI/CD)</li>
+            <li>Expertise Frontend / Cross Platform: Développement mobile, applications desktop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        </main>
+  <!-- Projets -->
+  <section id="projects" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Projets réalisés</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Ecole La Plateforme</h5>
+              <ul>
+                <li>Conception et développement de sites web et d'applications vitrines et dynamiques en HTML, CSS, JavaScript, WordPress, PHP, SQL, ReactJS, Node.js, Angular Jquery.</li>
+                <li>Mise en œuvre de la programmation orientée objet (POO) et d'architecture MVC.</li>
+                <li>Intégration de fonctionnalités avancées: formulaires dynamiques, appels API, animations interactives</li>
+                <li>Travail en équipe sur des projets concret.</li>
+                <li>Technologie de conteneurisation: Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    </body>
+  <!-- Formation -->
+  <section id="education" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Formation</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">2024-2027</h5>
+              <p><strong>Bachelor IT - Concepteur Développeur d'Applications</strong></p>
+              <p>Ecole la plateforme Marseille, 13002</p>
+              <ul>
+                <li>Pédagogie par projet axée sur la résolution de problématiques concrètes</li>
+                <li>Formation de 3 ans délivrant un titre RNCP 6</li>
+                <li>Objectifs : conception et développement d'interfaces, base de données, application distribuées</li>
+              </ul>
+              <h5 class="card-title mt-4">2023-2024</h5>
+              <p><strong>Baccalauréat général spécialité Math SES</strong></p>
+              <p>Lycée Thiers Marseille, 13001</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 fade-in">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Mes coordonnées</h3>
+          <p><stong>Téléphone :</strong> 0659011423</p>
+          <p><stong>Email :</strong> lenain.emile@gmail.com</p>
+          <p><stong>Adresse :</strong> 17 rue des trois frères, Barthélémy, 13006, Marseille</p>
+          <p><stong>LinkedIn :</strong> <a href="#" class="text-white">Votre profil LinkedIn</a></p>
+        </div>
+        <div class="col-md-6">
+          <h3>Envoyez-moi un message</h3>
+          <form class="mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-light">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">© 2025 Ton Nom – Portfolio Full Stack</p>
+  </footer>
+
+  <script>
+    // Animation au scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
