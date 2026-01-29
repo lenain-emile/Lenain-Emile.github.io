@@ -3,165 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Emile Lenain - Développeur Web Junior</title>
+  <title>Emile Lenain | Développeur Web Junior</title>
+  <meta name="description" content="Portfolio d'Emile Lenain, développeur web junior passionné. À la recherche d'une alternance pour la rentrée 2026." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
- 
+  <!-- Cursor follower -->
+  <div class="cursor-follower"></div>
+  
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">EL</a>
+      <a class="navbar-brand" href="#">
+        <span class="brand-text">&lt;EL /&gt;</span>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">À propos</a>
+            <a class="nav-link" href="#about">
+              <span class="nav-number">01.</span> À propos
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Compétences</a>
+            <a class="nav-link" href="#skills">
+              <span class="nav-number">02.</span> Compétences
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projets</a>
+            <a class="nav-link" href="#projects">
+              <span class="nav-number">03.</span> Projets
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#education">Formation</a>
+            <a class="nav-link" href="#education">
+              <span class="nav-number">04.</span> Formation
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">
+              <span class="nav-number">05.</span> Contact
+            </a>
           </li>
         </ul>
+        <a href="#contact" class="btn btn-primary-custom ms-lg-4">Me contacter</a>
       </div>
     </div>
   </nav>
 
-  <header class="text-white text-center">
-    <div class="container hero-text">
-      <img src="assets/download.jpg" alt="Photo de profil" class="img-fluid rounded-circle profile-pic" />
-      <h1 class="display-4">Salut, moi c'est <strong>Emile Lenain</strong></h1>
-      <p class="lead">Développeur Web Junior</p>
-      <a href="#projects" class="btn btn-outline-light mt-3">Voir mes projets</a>
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-background">
+      <div class="hero-gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
     </div>
+    
+    <div class="container hero-content">
+      <div class="hero-text-wrapper">
+        <p class="hero-greeting animate-on-load">Bonjour, je suis</p>
+        <h1 class="hero-name animate-on-load">Emile Lenain<span class="accent-dot">.</span></h1>
+        <h2 class="hero-title animate-on-load">Développeur Web Junior</h2>
+        <p class="hero-description animate-on-load">
+          Étudiant passionné par le développement web et les nouvelles technologies.
+          <br>À la recherche d'une <span class="highlight">alternance</span> pour ma 3ème année.
+        </p>
+        <div class="hero-cta animate-on-load">
+          <a href="#projects" class="btn btn-primary-custom btn-lg">
+            <i data-lucide="folder-open" class="btn-icon"></i>
+            Découvrir mes projets
+          </a>
+          <a href="#contact" class="btn btn-outline-custom btn-lg">
+            <i data-lucide="send" class="btn-icon"></i>
+            Me contacter
+          </a>
+        </div>
+        <div class="hero-stats animate-on-load">
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Projets réalisés</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Années d'études</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-image-wrapper animate-on-load">
+        <div class="hero-image-container">
+          <div class="hero-image-glow"></div>
+          <img src="assets/download.jpg" alt="Emile Lenain" class="hero-image" />
+          <div class="hero-image-border"></div>
+        </div>
+        <div class="hero-social-links">
+          <a href="https://github.com/lenain-emile" target="_blank" rel="noopener" class="social-link" title="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/emile-lenain-30450a343/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:lenain.emile@gmail.com" class="social-link" title="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#about" class="scroll-indicator">
+      <span class="scroll-text">Scroll</span>
+      <i data-lucide="chevron-down" class="scroll-icon"></i>
+    </a>
   </header>
 
-  
-  <section id="about" class="py-5 fade-in">
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <h2 class="text-center mb-4">À propos</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <p class="text-center" style="font-size: 1.15em; line-height: 1.8;">Étudiant de 20 ans, diplômé d'un baccalauréat général obtenu en 2024 au lycée Thiers, je suis actuellement en 2ᵉ année de formation et je me prépare à intégrer une 3ᵉ année spécialisée dans le développement web, dans l'objectif d'obtenir un titre RNCP de niveau 6.</p>
-          <p class="text-center" style="font-size: 1.15em; line-height: 1.8; margin-top: 25px;">Passionné par le développement web et les nouvelles technologies, je souhaite intégrer une alternance afin de renforcer mes compétences techniques, acquérir une expérience professionnelle concrète et évoluer au sein d'une entreprise à laquelle je pourrai apporter mon sérieux, ma motivation et mon engagement.</p>
-        </div>
+      <div class="section-header fade-in">
+        <span class="section-number">01</span>
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="section-line"></div>
       </div>
-    </div>
-  </section>
-
-  
-  <section id="skills" class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center mb-4">Compétences</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Langages back-end</h3>
-          <ul>
-            <li>PHP</li>
-            <li>JavaScript (Node.js)</li>
-          </ul>
-          <h3>Bases de données</h3>
-          <ul>
-            <li>SQL (MySQL / PostgreSQL)</li>
-          </ul>
-          <h3>Front-end</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-          </ul>
-          <h3>Librairies</h3>
-          <ul>
-            <li>React.js</li>
-            <li>jQuery</li>
-          </ul>
-          <h3>Frameworks</h3>
-          <ul>
-            <li>Symfony</li>
-            <li>Angular</li>
-            <li>Bootstrap</li>
-            <li>Tailwind CSS</li>
-          </ul>
-          <h3>Outils</h3>
-          <ul>
-            <li>Git / GitHub</li>
-            <li>Figma</li>
-            <li>Trello</li>
-          </ul>
-          <h3>Conteneurisation</h3>
-          <ul>
-            <li>Docker</li>
-          </ul>
+      
+      <div class="row align-items-center">
+        <div class="col-lg-6 fade-in">
+          <div class="about-content">
+            <p class="about-text">
+              Bonjour ! Je suis <strong>Emile</strong>, un développeur web junior de <strong>20 ans</strong> basé à <strong>Marseille</strong>. 
+              Diplômé d'un baccalauréat général obtenu en 2024 au lycée Thiers, je suis actuellement en 
+              <strong>2ème année de formation</strong> à l'école La Plateforme.
+            </p>
+            <p class="about-text">
+              Je me prépare à intégrer une 3ème année spécialisée dans le développement web, 
+              avec l'objectif d'obtenir un <strong>titre RNCP de niveau 6</strong> (Bachelor Concepteur Développeur d'Applications).
+            </p>
+            <p class="about-text">
+              Passionné par le développement web et les nouvelles technologies, je souhaite intégrer une 
+              <strong>alternance</strong> afin de renforcer mes compétences techniques, acquérir une expérience 
+              professionnelle concrète et évoluer au sein d'une entreprise à laquelle je pourrai apporter 
+              mon sérieux, ma motivation et mon engagement.
+            </p>
+            
+            <div class="about-info-grid">
+              <div class="info-item">
+                <i data-lucide="map-pin" class="info-icon"></i>
+                <span>Marseille, France</span>
+              </div>
+              <div class="info-item">
+                <i data-lucide="graduation-cap" class="info-icon"></i>
+                <span>Bachelor CDA en cours</span>
+              </div>
+              <div class="info-item">
+                <i data-lucide="briefcase" class="info-icon"></i>
+                <span>Recherche alternance</span>
+              </div>
+              <div class="info-item">
+                <i data-lucide="calendar" class="info-icon"></i>
+                <span>Disponible dès septembre 2026</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h3>Compétences à venir</h3>
-          <ul>
-            <li>Développement web avancé: Interfaces, bases de données NoSQL et gestion de projets (MongoDB, Express)</li>
-            <li>Frameworks Web: Découverte de Symfony, gestion des bases de données ORM et utilisation de Twig.</li>
-            <li>Expertise Backend / DevOps: Conception avancée d'API, intégration continue et déploiement automatisé (CI/CD)</li>
-            <li>Expertise Frontend / Cross Platform: Développement mobile, applications desktop</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projets -->
-  <section id="projects" class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center mb-4">Projets réalisés</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://github.com/lenain-emile/boutique_en_ligne" class="project-container">
-            <h3>Boutique en ligne</h3>
-            <p>Développement d'une boutique en ligne responsive en utilisant HTML, CSS, PHP et Bootstrap.</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/lenain-emile/jeu-Pok-mon-React" class="project-container">
-            <h3>React js : memory</h3>
-            <p>Développement d’un jeu de mémoire interactif en utilisant ReactJS.</p>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://github.com/anne-gaelle-bernard/Jpo-connect" class="project-container">
-            <h3>journée porte-ouverte</h3>
-            <p>Développement d’un site web permettant aux établissements scolaires de publier leurs Journées Portes Ouvertes, et aux élèves de s’inscrire facilement. Technologies utilisées : HTML, CSS, ReactJS</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Formation -->
-  <section id="education" class="py-5 fade-in">
-    <div class="container">
-      <h2 class="text-center mb-4">Formation</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">2024-2027</h5>
-              <p><strong>Bachelor IT - Concepteur Développeur d'Applications</strong></p>
-              <p>Ecole la plateforme Marseille, 13002</p>
-              <ul>
-                <li>Pédagogie par projet axée sur la résolution de problématiques concrètes</li>
-                <li>Formation de 3 ans délivrant un titre RNCP 6</li>
-                <li>Objectifs : conception et développement d'interfaces, base de données, application distribuées</li>
-              </ul>
-              <h5 class="card-title mt-4">2023-2024</h5>
-              <p><strong>Baccalauréat général spécialité Math SES</strong></p>
-              <p>Lycée Thiers Marseille, 13001</p>
+        
+        <div class="col-lg-6 fade-in">
+          <div class="about-image-section">
+            <div class="code-window">
+              <div class="code-header">
+                <div class="code-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="code-title">about-me.js</span>
+              </div>
+              <div class="code-content">
+                <pre><code><span class="code-keyword">const</span> <span class="code-variable">emile</span> = {
+  <span class="code-property">age</span>: <span class="code-number">20</span>,
+  <span class="code-property">location</span>: <span class="code-string">"Marseille"</span>,
+  <span class="code-property">education</span>: <span class="code-string">"Bachelor CDA"</span>,
+  <span class="code-property">school</span>: <span class="code-string">"La Plateforme"</span>,
+  <span class="code-property">status</span>: <span class="code-string">"Seeking alternance"</span>,
+  <span class="code-property">passions</span>: [
+    <span class="code-string">"Web Development"</span>,
+    <span class="code-string">"New Technologies"</span>,
+    <span class="code-string">"Problem Solving"</span>
+  ],
+  <span class="code-property">hardWorker</span>: <span class="code-boolean">true</span>,
+  <span class="code-property">motivated</span>: <span class="code-boolean">true</span>
+};</code></pre>
+              </div>
             </div>
           </div>
         </div>
@@ -169,65 +224,501 @@
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-5 fade-in">
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
     <div class="container">
-      <h2 class="text-center mb-4">Contact</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Mes coordonnées</h3>
-          <p><stong>Téléphone :</strong> 0659011423</p>
-          <p><stong>Email :</strong> lenain.emile@gmail.com</p>
-          <p><stong>Adresse :</strong> 17 rue des trois frères, Barthélémy, 13006, Marseille</p>
-          <p><stong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/emile-lenain-30450a343/" class="text-white">Mon profil LinkedIn</a></p>
+      <div class="section-header fade-in">
+        <span class="section-number light">02</span>
+        <h2 class="section-title light">Mes Compétences</h2>
+        <div class="section-line light"></div>
+      </div>
+      
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="palette" class="skill-category-icon"></i>
+            </div>
+            <h3 class="skill-category-title">Frontend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML5</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">CSS3 / Sass</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Angular</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 65%"></div></div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <h3>Envoyez-moi un message</h3>
-          <form class="mx-auto" style="max-width: 600px;">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="name" required />
+        
+        <!-- Backend -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="server" class="skill-category-icon"></i>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required />
+            <h3 class="skill-category-title">Backend</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">PHP</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
             </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
             </div>
-            <button type="submit" class="btn btn-outline-light"><span>Envoyer</span></button>
-          </form>
+            <div class="skill-item">
+              <span class="skill-name">Symfony</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 65%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MySQL / PostgreSQL</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="layers" class="skill-category-icon"></i>
+            </div>
+            <h3 class="skill-category-title">Frameworks & Librairies</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Bootstrap</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Tailwind CSS</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">jQuery</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Tools -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon-wrapper">
+              <i data-lucide="wrench" class="skill-category-icon"></i>
+            </div>
+            <h3 class="skill-category-title">Outils & DevOps</h3>
+          </div>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Docker</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 60%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Learning Soon -->
+      <div class="learning-section fade-in">
+        <h3 class="learning-title">
+          <i data-lucide="rocket" class="learning-icon"></i>
+          Prochainement dans ma formation
+        </h3>
+        <div class="learning-tags">
+          <span class="learning-tag">MongoDB</span>
+          <span class="learning-tag">Express.js</span>
+          <span class="learning-tag">API REST avancées</span>
+          <span class="learning-tag">CI/CD</span>
+          <span class="learning-tag">Tests automatisés</span>
+          <span class="learning-tag">Développement Mobile</span>
+          <span class="learning-tag">NoSQL</span>
+          <span class="learning-tag">Twig</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Mes Projets</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/lenain-emile/boutique_en_ligne" target="_blank" rel="noopener" class="project-link" title="Voir le code">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i data-lucide="shopping-cart" class="project-placeholder-icon"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Site e-commerce</span>
+              <h3 class="project-title">Boutique en ligne</h3>
+            </div>
+            <p class="project-description">
+              Développement d'une boutique en ligne complète et responsive. 
+              Interface utilisateur intuitive avec gestion de panier et catalogue produits.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Bootstrap</span>
+            </div>
+            <a href="https://github.com/lenain-emile/boutique_en_ligne" target="_blank" rel="noopener" class="project-cta">
+              Voir le projet <i data-lucide="arrow-right" class="cta-icon"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Project 2 -->
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/lenain-emile/jeu-Pok-mon-React" target="_blank" rel="noopener" class="project-link" title="Voir le code">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i data-lucide="gamepad-2" class="project-placeholder-icon"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Application Web</span>
+              <h3 class="project-title">Jeu Memory Pokémon</h3>
+            </div>
+            <p class="project-description">
+              Jeu de mémoire interactif développé avec React.js. 
+              Mécaniques de jeu engageantes avec système de score et animations fluides.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">CSS</span>
+            </div>
+            <a href="https://github.com/lenain-emile/jeu-Pok-mon-React" target="_blank" rel="noopener" class="project-cta">
+              Voir le projet <i data-lucide="arrow-right" class="cta-icon"></i>
+            </a>
+          </div>
+        </article>
+        
+        <!-- Project 3 -->
+        <article class="project-card fade-in">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/anne-gaelle-bernard/Jpo-connect" target="_blank" rel="noopener" class="project-link" title="Voir le code">
+                  <i data-lucide="github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i data-lucide="calendar-days" class="project-placeholder-icon"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <span class="project-type">Projet collaboratif</span>
+              <h3 class="project-title">JPO Connect</h3>
+            </div>
+            <p class="project-description">
+              Plateforme permettant aux établissements scolaires de publier leurs Journées Portes Ouvertes 
+              et aux élèves de s'inscrire facilement. Projet réalisé en équipe.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Travail d'équipe</span>
+            </div>
+            <a href="https://github.com/anne-gaelle-bernard/Jpo-connect" target="_blank" rel="noopener" class="project-cta">
+              Voir le projet <i data-lucide="arrow-right" class="cta-icon"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      
+      <div class="projects-cta fade-in">
+        <a href="https://github.com/lenain-emile" target="_blank" rel="noopener" class="btn btn-outline-custom btn-lg">
+          <i data-lucide="github" class="btn-icon"></i>
+          Voir plus sur GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Mon Parcours</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker">
+            <i data-lucide="code-2"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2024 - 2027</span>
+              <span class="timeline-status current">En cours</span>
+            </div>
+            <h3 class="timeline-title">Bachelor IT - Concepteur Développeur d'Applications</h3>
+            <p class="timeline-location">
+              <i data-lucide="map-pin" class="location-icon"></i>
+              École La Plateforme, Marseille
+            </p>
+            <div class="timeline-description">
+              <ul class="timeline-list">
+                <li>Pédagogie par projet axée sur la résolution de problématiques concrètes</li>
+                <li>Formation de 3 ans délivrant un titre RNCP de niveau 6</li>
+                <li>Conception et développement d'interfaces, bases de données, applications distribuées</li>
+                <li>Travail collaboratif et méthodologies agiles</li>
+              </ul>
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">React</span>
+              <span class="timeline-tag">PHP</span>
+              <span class="timeline-tag">Node.js</span>
+              <span class="timeline-tag">SQL</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker">
+            <i data-lucide="graduation-cap"></i>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-date">2023 - 2024</span>
+              <span class="timeline-status completed">Obtenu</span>
+            </div>
+            <h3 class="timeline-title">Baccalauréat Général</h3>
+            <p class="timeline-location">
+              <i data-lucide="map-pin" class="location-icon"></i>
+              Lycée Thiers, Marseille
+            </p>
+            <div class="timeline-description">
+              <p>Spécialités Mathématiques et Sciences Économiques et Sociales (SES)</p>
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Mathématiques</span>
+              <span class="timeline-tag">SES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-number light">05</span>
+        <h2 class="section-title light">Me Contacter</h2>
+        <div class="section-line light"></div>
+      </div>
+      
+      <div class="contact-intro fade-in">
+        <p class="contact-intro-text">
+          Vous avez un projet en tête ou une opportunité d'alternance ? 
+          N'hésitez pas à me contacter, je serai ravi d'échanger avec vous !
+        </p>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-5 fade-in">
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Informations de contact</h3>
+            
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Téléphone</span>
+                  <a href="tel:0659011423" class="contact-card-value">06 59 01 14 23</a>
+                </div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Email</span>
+                  <a href="mailto:lenain.emile@gmail.com" class="contact-card-value">lenain.emile@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Localisation</span>
+                  <span class="contact-card-value">Marseille, France</span>
+                </div>
+              </div>
+              
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <i data-lucide="linkedin"></i>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/emile-lenain-30450a343/" target="_blank" rel="noopener" class="contact-card-value">Mon profil LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-7 fade-in">
+          <div class="contact-form-wrapper">
+            <h3 class="contact-subtitle">Envoyez-moi un message</h3>
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name" class="form-label">Nom complet</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user" class="input-icon"></i>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="mail" class="input-icon"></i>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="votre@email.com" required />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Sujet</label>
+                <div class="input-wrapper">
+                  <i data-lucide="message-square" class="input-icon"></i>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Objet de votre message" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i data-lucide="edit-3" class="input-icon"></i>
+                  <textarea class="form-control" id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary-custom btn-lg btn-submit">
+                <span class="btn-text">Envoyer le message</span>
+                <i data-lucide="send" class="btn-icon"></i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-white text-center py-3">
-    <p class="mb-0">© 2025 Lenain Emile – Portfolio</p>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">&lt;EL /&gt;</a>
+          <p class="footer-tagline">Développeur Web Junior passionné</p>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#education">Formation</a>
+          <a href="#contact">Contact</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://github.com/lenain-emile" target="_blank" rel="noopener" class="footer-social-link">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/emile-lenain-30450a343/" target="_blank" rel="noopener" class="footer-social-link">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="mailto:lenain.emile@gmail.com" class="footer-social-link">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2026 Emile Lenain. Conçu avec <i data-lucide="heart" class="heart-icon"></i> à Marseille
+        </p>
+        <p class="footer-made">
+          Développé avec HTML, CSS & JavaScript
+        </p>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    // Animation au scroll
-    const faders = document.querySelectorAll('.fade-in');
-    const appearOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i data-lucide="chevron-up"></i>
+  </button>
 
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        appearOnScroll.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
