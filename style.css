@@ -1264,182 +1264,7 @@ button {
 }
 
 /* ============================================
-   11. CONTACT SECTION
-   ============================================ */
-.contact-intro {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto var(--spacing-3xl);
-}
-
-.contact-intro-text {
-  font-size: 1.1rem;
-  color: var(--color-text-secondary);
-  line-height: 1.8;
-}
-
-.contact-subtitle {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-text-primary);
-  margin-bottom: var(--spacing-xl);
-}
-
-.contact-cards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-}
-
-.contact-card {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-lg);
-  background: var(--color-bg-tertiary);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: var(--transition-base);
-}
-
-.contact-card:hover {
-  border-color: var(--color-accent-primary);
-  transform: translateX(10px);
-}
-
-.contact-card-icon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(99, 102, 241, 0.15);
-  border-radius: var(--radius-lg);
-  flex-shrink: 0;
-}
-
-.contact-card-icon svg {
-  width: 22px;
-  height: 22px;
-  color: var(--color-accent-primary);
-}
-
-.contact-card-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-card-label {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 2px;
-}
-
-.contact-card-value {
-  font-size: 0.95rem;
-  color: var(--color-text-primary);
-  font-weight: 500;
-}
-
-a.contact-card-value:hover {
-  color: var(--color-accent-primary);
-}
-
-/* Contact Form */
-.contact-form-wrapper {
-  background: var(--color-bg-tertiary);
-  border-radius: var(--radius-xl);
-  padding: var(--spacing-2xl);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-lg);
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--spacing-lg);
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
-}
-
-.form-label {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-}
-
-.input-wrapper {
-  position: relative;
-}
-
-.input-icon {
-  position: absolute;
-  left: var(--spacing-md);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  color: var(--color-text-muted);
-  pointer-events: none;
-  transition: var(--transition-base);
-}
-
-.textarea-wrapper .input-icon {
-  top: var(--spacing-md);
-  transform: none;
-}
-
-.form-control {
-  width: 100%;
-  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) calc(var(--spacing-md) * 3);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-lg);
-  color: var(--color-text-primary);
-  font-size: 0.95rem;
-  font-family: var(--font-sans);
-  transition: var(--transition-base);
-}
-
-.form-control::placeholder {
-  color: var(--color-text-muted);
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--color-accent-primary);
-  background: rgba(99, 102, 241, 0.05);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
-}
-
-.form-control:focus + .input-icon,
-.input-wrapper:focus-within .input-icon {
-  color: var(--color-accent-primary);
-}
-
-textarea.form-control {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.btn-submit {
-  align-self: flex-start;
-  margin-top: var(--spacing-sm);
-}
-
-/* ============================================
-   12. FOOTER
+   11. FOOTER
    ============================================ */
 .footer {
   background: var(--color-bg-primary);
@@ -1559,7 +1384,7 @@ textarea.form-control {
 }
 
 /* ============================================
-   13. BACK TO TOP BUTTON
+   12. BACK TO TOP BUTTON
    ============================================ */
 .back-to-top {
   position: fixed;
@@ -1598,7 +1423,7 @@ textarea.form-control {
 }
 
 /* ============================================
-   14. RESPONSIVE DESIGN
+   13. RESPONSIVE DESIGN
    ============================================ */
 @media (max-width: 1024px) {
   .hero-content {
@@ -1738,14 +1563,6 @@ textarea.form-control {
     padding: var(--spacing-lg);
   }
   
-  .form-row {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-form-wrapper {
-    padding: var(--spacing-lg);
-  }
-  
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -1807,15 +1624,14 @@ textarea.form-control {
 }
 
 /* ============================================
-   15. PRINT STYLES
+   14. PRINT STYLES
    ============================================ */
 @media print {
   .navbar,
   .cursor-follower,
   .scroll-indicator,
   .back-to-top,
-  .hero-social-links,
-  .contact-form-wrapper {
+  .hero-social-links {
     display: none !important;
   }
   
@@ -1830,7 +1646,7 @@ textarea.form-control {
 }
 
 /* ============================================
-   16. ACCESSIBILITY
+   15. ACCESSIBILITY
    ============================================ */
 @media (prefers-reduced-motion: reduce) {
   *,
